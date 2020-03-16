@@ -1,0 +1,31 @@
+@import '../../../assets/styles/variables';
+
+.section {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5em 10%;
+    font-size: 0.75em;
+    border-bottom: 1px solid $primary-background;
+}
+
+.contactIconsWrapper {
+    flex-grow: 10;
+    display: flex;
+}
+
+.contactFigure {
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.socialIconsWrapper {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contactIcon {
+    margin-right: 5%;
+}
