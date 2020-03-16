@@ -1,0 +1,12 @@
+%padded-section {
+    padding: 1.5em 10%;
+}
+
+%flex {
+    display: flex;
+}
+
+%flex-space-between {
+    @extend %flex;
+    justify-content: space-between;
+}
