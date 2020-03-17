@@ -5,8 +5,16 @@ import SearchIcon from '@src/assets/img/search.png';
 import UserIcon from '@src/assets/img/user.png';
 import CartIcon from '@src/assets/img/cart-ico.png';
 import styles from './HeaderMenu.module';
+import { HEADER_MENU_LINKS } from '@src/assets/constants';
 
 export default class HeaderMenu extends Component {
+  renderMenuLinks() {
+    return HEADER_MENU_LINKS.map(link => (
+      <li className={styles.menuItem} key={link}>
+        <Link className={styles.menuLink} linkName={link} />
+      </li>
+    ));
+  }
   render() {
     return (
       <section className={styles.section}>
@@ -14,23 +22,7 @@ export default class HeaderMenu extends Component {
           <img src={Logo} className={styles.logo}></img>
         </figure>
         <nav className={styles.menu}>
-          <ul className={styles.menuList}>
-            <li className={styles.menuItem}>
-              <Link linkName="Home" />
-            </li>
-            <li className={styles.menuItem}>
-              <Link linkName="Products" />
-            </li>
-            <li className={styles.menuItem}>
-              <Link linkName="Hot Deals" />
-            </li>
-            <li className={styles.menuItem}>
-              <Link linkName="About" />
-            </li>
-            <li className={styles.menuItem}>
-              <Link linkName="Contact" />
-            </li>
-          </ul>
+          <ul className={styles.menuList}>{this.renderMenuLinks()}</ul>
         </nav>
         <div className={styles.iconWrapper}>
           <img src={SearchIcon} className={styles.icon}></img>
