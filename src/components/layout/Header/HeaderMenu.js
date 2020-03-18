@@ -1,17 +1,17 @@
 import React, { Component } from 'react';
-import Link from '@src/components/ui/Link/';
-import Logo from '@src/assets/img/logo.png';
-import SearchIcon from '@src/assets/img/search.png';
-import UserIcon from '@src/assets/img/user.png';
-import CartIcon from '@src/assets/img/cart-ico.png';
+import MenuLink from '@src/components/ui/MenuLink/';
+import Logo from '@images/logo.png';
+import SearchIcon from '@images/search.png';
+import UserIcon from '@images/user.png';
+import CartIcon from '@images/cart-ico.png';
 import styles from './HeaderMenu.module';
-import { HEADER_MENU_LINKS } from '@src/assets/constants';
+import { HEADER_MENU_LINKS } from '@src/assets/enums/links';
 
 export default class HeaderMenu extends Component {
   renderMenuLinks() {
     return HEADER_MENU_LINKS.map(link => (
       <li className={styles.menuItem} key={link}>
-        <Link className={styles.menuLink} linkName={link} />
+        <MenuLink className={styles.menuLink} linkName={link} />
       </li>
     ));
   }

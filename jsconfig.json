@@ -4,7 +4,8 @@
       "allowSyntheticDefaultImports": false,
       "baseUrl": "./",
       "paths": {
-        "@src/*": ["src/*"]
+        "@src/*": ["src/*"],
+        "@images/*": ["src/assets/img/*"]
       }
     },
     "exclude": ["node_modules"]

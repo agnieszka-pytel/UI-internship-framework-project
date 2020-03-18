@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import MailIcon from '@src/assets/img/mail-ico.png';
-import PhoneIcon from '@src/assets/img/phone-ico.png';
+import MailIcon from '@images/mail-ico.png';
+import PhoneIcon from '@images/phone-ico.png';
 import styles from './HeaderContact.module';
 
 export default class HeaderContact extends Component {
