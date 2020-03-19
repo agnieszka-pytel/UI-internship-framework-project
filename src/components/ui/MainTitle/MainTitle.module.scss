@@ -1,0 +1,9 @@
+@import '~styles/variables';
+
+.mainTitle {
+    font-size: 3em;
+    line-height: 2em;
+    font-weight: $bold;
+    color: $accent-color;
+    text-transform: uppercase;
+}

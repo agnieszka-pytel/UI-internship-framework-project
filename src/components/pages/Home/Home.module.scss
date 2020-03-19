@@ -1,8 +1,0 @@
-@import '~styles/placeholders';
-
-.section {
-    @extend %padded-section;
-    background-image: url('~images/featured-bg.png');
-    background-position: center;
-    background-size: cover;
-}

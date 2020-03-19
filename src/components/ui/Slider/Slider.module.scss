@@ -1,0 +1,65 @@
+@import '~styles/placeholders';
+@import '~styles/variables';
+
+.section {
+    @extend %padded-section;
+    @extend %flex;
+    align-items: center;
+    background-image: url('~images/featured-bg.png');
+    background-position: right;
+    background-size: cover;
+    line-height: 2em;
+    box-sizing: border-box;
+    height: 100vh;
+}
+
+.article {
+    position: relative;
+    padding-left: 10%;
+}
+
+.subtitle {
+    font-weight: $semi-bold;
+}
+
+.detailsWrapper {
+    @extend %flex;
+    margin-top: 5%;
+    font-weight: $semi-bold;
+}
+
+.cta {
+    margin-left: 2em;
+    text-decoration: none;;
+}
+
+.ctaText {
+    margin-left: 0.5em;
+    color: $accent-color;
+}
+
+.sliderNav {
+    @extend %flex;
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    top:50%;
+    transform: translate(0, -50%);
+}
+
+.sliderPrev, .sliderCurrent, .sliderNext {
+    cursor: pointer;
+}
+
+.sliderPrev, .sliderNext {
+    width: 0.5em;
+    height: 1em;
+    background-color: white;
+}
+
+.sliderCurrent {
+    width: 0.5em;
+    height: 2em;
+    background-color: $accent-color;
+    margin: 0.5em 0;
+}
